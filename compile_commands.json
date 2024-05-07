@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/yuuka/membench/build",
+  "command": "/usr/bin/c++  -isystem /home/yuuka/membench/build/vcpkg_installed/x64-linux/include  -o CMakeFiles/HelloWorld.dir/main.cpp.o -c /home/yuuka/membench/main.cpp",
+  "file": "/home/yuuka/membench/main.cpp"
+}
+]
