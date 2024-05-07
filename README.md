@@ -1,5 +1,7 @@
 # 内存分配性能测试
 
+Release提供了构建好的二进制文件，理论上可以在linux下直接运行
+
 [知乎原帖](https://zhuanlan.zhihu.com/p/696063514?utm_campaign=&utm_medium=social&utm_psn=1771194604794503170&utm_source=qq)
 
 
@@ -35,6 +37,7 @@ gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2)
 - C++的benchmark构建和运行 （[需要安装vcpkg](https://learn.microsoft.com/en-us/vcpkg/get_started/get-started?pivots=shell-bash)），使用的mimalloc版本为2.1.2
 
   ```shell
+  # 需要设置VCPKG_ROOT环境变量
   cmake --preset=default -DCMAKE_BUILD_TYPE=Release
   
   cmake --build build
