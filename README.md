@@ -5,11 +5,6 @@ Release提供了构建好的二进制文件，理论上可以在linux下直接�
 [知乎原帖](https://zhuanlan.zhihu.com/p/696063514?utm_campaign=&utm_medium=social&utm_psn=1771194604794503170&utm_source=qq)
 
 
-
-只复现了C++和C#，java有空再补充
-
-
-
 ## 测试平台
 
 操作系统和gcc，glibc版本2.31
@@ -31,6 +26,20 @@ gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2)
 ```
 
 内存金士顿银爵DDR4 32G*4，cpu为13th Gen Intel(R) Core(TM) i5-13490F
+
+.net使用ubuntu20.04源的.net8, jdk使用oracle-jdk21
+
+```shell
+# java --version
+java 21.0.3 2024-04-16 LTS
+Java(TM) SE Runtime Environment (build 21.0.3+7-LTS-152)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.3+7-LTS-152, mixed mode, sharing)
+
+# dotnet --version
+dotnet --version                        
+8.0.204
+
+```
 
 ## 构建
 
@@ -58,6 +67,12 @@ gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2)
   ./bin/Release/net8.0/cs
   ```
 
+- java使用命令行构建
+  
+  ```shell
+  javac App.java
+  ```
+
   
 
 ## 运行结果
@@ -71,3 +86,7 @@ gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2)
 - C#（只使用了-c Release构建）
 
   ![截屏2024-05-08 04.23.24](./results/3.png)
+
+- java (同样，简单搜索没有找到javac有编译优化选项，有的话我会马上更新)
+
+  ![](./results/4.png)
